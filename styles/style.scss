@@ -85,7 +85,7 @@ form {
 .hotline {
   margin: 1em;
   background-color: $grayColor;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 1em;
   p {
     font-size: 14px;
@@ -107,6 +107,7 @@ form {
     color: $whiteColor;
     margin: 1em;
     .cards {
+      border-radius: 5px;
       background-color: $grayColor;
       @include center(column);
       margin: 1em;

@@ -125,7 +125,7 @@ form button {
 .hotline {
   margin: 1em;
   background-color: #2b2c3e;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 1em;
 }
 
@@ -182,6 +182,7 @@ form button {
 }
 
 .landing .card .cards {
+  border-radius: 5px;
   background-color: #2b2c3e;
   display: -webkit-box;
   display: -ms-flexbox;
