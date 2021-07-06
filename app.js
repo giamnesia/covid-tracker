@@ -13,7 +13,7 @@ async function world() {
 }
 
 function worldcases(data) {
-  landing.innerHTML = `<h1> Global <i class="fas fa-globe"></i></h1>
+  landing.innerHTML = `<h1> Global  <i class="fas fa-globe"></i></h1>
         <div class="card">
             <div class="cards">
             <p>Total Cases</p>
