@@ -3,6 +3,30 @@ form = document.querySelector(".form");
 image = document.querySelector(".desc");
 form.addEventListener("submit", search);
 
+window.reload(world());
+async function world() {
+  const response = await fetch("https://disease.sh/v3/covid-19/all");
+  response.json().then((data) => {
+    console.log(data);
+    worldcases(data);
+  });
+}
+
+function worldcases(data) {
+  landing.innerHTML = `<h1> Global <i class="fas fa-globe"></i></h1>
+        <div class="card">
+            <div class="cards">
+            <p>Total Cases</p>
+            <p class='data' >${formatNumber(data.cases)}</p></div>
+            <div class="cards"><p>Total Active Cases</p>
+            <p class='data'>${formatNumber(data.cases)}</p>
+             </div>
+            <div class="cards"><p>Total Deaths</p>
+            <p class='data'>${formatNumber(data.deaths)}</p></div>
+            <div class="cards"><p>Total Recoveries</p>
+            <p class='data'>${formatNumber(data.recovered)}</p></div> 
+        </div>`;
+}
 async function search(e) {
   searchval = document.querySelector(".search").value;
   e.preventDefault();
@@ -13,7 +37,6 @@ async function search(e) {
       "?strict=true"
   );
   response.json().then((data) => {
-    console.log(data);
     if (response.ok) {
       display(data);
     } else {
