@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1d2b;
+  overflow-x: hidden;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 1em;
+  background-color: #2b2c3e;
+}
+
+.nav ul li {
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  margin: 0.2em;
+}
+
+.nav ul .made {
+  font-size: 10px;
+}
+
+.nav ul .made a {
+  text-decoration: none;
+  color: #0177fb;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2em;
+}
+
+form input {
+  border-radius: 1em 0 0 1em;
+  color: #fcfcfc;
+  background-color: #2b2c3e;
+  outline: none;
+  border: none;
+  padding: 1em;
+}
+
+form button {
+  cursor: pointer;
+  border-radius: 0 1em 1em 0;
+  padding: 1em;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #0177fb;
+}
+
+.desc {
+  color: #fcfcfc;
+  margin: 1em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desc .socdistance {
+  padding: 1em;
+  width: 200px;
+}
+
+.desc p {
+  margin: 1em;
+}
+
+.desc a {
+  text-decoration: none;
+  color: #0177fb;
+}
+
+.hotline {
+  margin: 1em;
+  background-color: #2b2c3e;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.hotline p {
+  font-size: 14px;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing img {
+  margin: 1em;
+  width: 50px;
+}
+
+.landing h1 {
+  color: #fcfcfc;
+  text-align: center;
+}
+
+.landing .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fcfcfc;
+  margin: 1em;
+}
+
+.landing .card .cards {
+  background-color: #2b2c3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+  padding: 0.5em;
+  width: 300px;
+  height: 150px;
+}
+
+.landing .card .cards .data {
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: center;
+  padding: 1em;
+  margin: 0.5em;
+  color: #fcfcfc;
+}
+
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .desc .socdistance {
+    width: 160px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

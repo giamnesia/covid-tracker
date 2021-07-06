@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@mixin center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+}
+
+$blackColor: rgb(30, 29, 43);
+$blueColor: #0177fb;
+$grayColor: rgb(43, 44, 62);
+$whiteColor: rgb(252, 252, 252);
+
+body {
+  background-color: $blackColor;
+  overflow-x: hidden;
+}
+
+.nav {
+  ul {
+    @include center(column);
+    list-style: none;
+    padding: 1em;
+    background-color: $grayColor;
+    li {
+      font-size: 1.5rem;
+      color: $whiteColor;
+      margin: 0.2em;
+    }
+    .made {
+      font-size: 10px;
+      a {
+        text-decoration: none;
+        color: $blueColor;
+      }
+    }
+  }
+}
+form {
+  @include center(row);
+  margin: 2em;
+  input {
+    border-radius: 1em 0 0 1em;
+    color: $whiteColor;
+    background-color: $grayColor;
+    outline: none;
+    border: none;
+    padding: 1em;
+  }
+  button {
+    cursor: pointer;
+    border-radius: 0 1em 1em 0;
+    padding: 1em;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: $blueColor;
+  }
+}
+.desc {
+  color: $whiteColor;
+  margin: 1em;
+  text-align: center;
+  @include center(column);
+  .socdistance {
+    padding: 1em;
+    width: 200px;
+  }
+  p {
+    margin: 1em;
+  }
+  a {
+    text-decoration: none;
+    color: $blueColor;
+  }
+}
+.hotline {
+  margin: 1em;
+  background-color: $grayColor;
+  border-radius: 20px;
+  padding: 1em;
+  p {
+    font-size: 14px;
+  }
+}
+
+.landing {
+  @include center(column);
+  img {
+    margin: 1em;
+    width: 50px;
+  }
+  h1 {
+    color: $whiteColor;
+    text-align: center;
+  }
+  .card {
+    @include center(row);
+    color: $whiteColor;
+    margin: 1em;
+    .cards {
+      background-color: $grayColor;
+      @include center(column);
+      margin: 1em;
+      padding: 0.5em;
+      width: 300px;
+      height: 150px;
+      .data {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+h3 {
+  text-align: center;
+  padding: 1em;
+  margin: 0.5em;
+  color: $whiteColor;
+}
+
+@media (max-width: 600px) {
+  .landing {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .desc {
+    .socdistance {
+      width: 160px;
+    }
+  }
+}
