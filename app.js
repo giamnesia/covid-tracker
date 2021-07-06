@@ -3,11 +3,10 @@ form = document.querySelector(".form");
 image = document.querySelector(".desc");
 form.addEventListener("submit", search);
 
-window.reload(world());
+this.onload = world;
 async function world() {
   const response = await fetch("https://disease.sh/v3/covid-19/all");
   response.json().then((data) => {
-    console.log(data);
     worldcases(data);
   });
 }
@@ -19,7 +18,7 @@ function worldcases(data) {
             <p>Total Cases</p>
             <p class='data' >${formatNumber(data.cases)}</p></div>
             <div class="cards"><p>Total Active Cases</p>
-            <p class='data'>${formatNumber(data.cases)}</p>
+            <p class='data'>${formatNumber(data.active)}</p>
              </div>
             <div class="cards"><p>Total Deaths</p>
             <p class='data'>${formatNumber(data.deaths)}</p></div>
