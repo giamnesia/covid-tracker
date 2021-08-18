@@ -30,8 +30,8 @@ function worldcases(data) {
 }
 async function search(e) {
   searchval = document.querySelector(".search").value;
-  e.preventDefault();
   loader.style.display = "block";
+  e.preventDefault();
 
   const response = await fetch(
     "https://corona.lmao.ninja/v3/covid-19/countries/" +
@@ -41,7 +41,6 @@ async function search(e) {
   response.json().then((data) => {
     if (response.ok) {
       display(data);
-      loader.style.display = "none";
     } else {
       displayerror(data);
       loader.style.display = "none";
@@ -58,6 +57,7 @@ function formatNumber(num) {
 }
 
 function display(data) {
+  loader.style.display = "none";
   image.style.display = "none";
   landing.innerHTML = ` 
     <h1 class="country">${data.country}, ${
