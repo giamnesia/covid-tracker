@@ -160,19 +160,6 @@ form button {
   font-size: 2rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #1e1d2b;
-  overflow-x: hidden;
-}
-
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,6 +196,31 @@ body {
   color: #0177fb;
 }
 
+@media (max-width: 600px) {
+  .landing h1 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .desc .socdistance {
+    width: 160px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1d2b;
+  overflow-x: hidden;
+}
+
 .loader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,17 +245,5 @@ h3 {
   padding: 1em;
   margin: 0.5em;
   color: #fcfcfc;
-}
-
-@media (max-width: 600px) {
-  .landing h1 {
-    font-size: 26px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  .desc .socdistance {
-    width: 160px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

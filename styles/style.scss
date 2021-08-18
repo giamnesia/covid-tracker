@@ -3,6 +3,8 @@
 @import "form";
 @import "desc";
 @import "landing";
+@import "nav";
+@import "media";
 * {
   margin: 0;
   padding: 0;
@@ -15,27 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-.nav {
-  ul {
-    @include center(column);
-    list-style: none;
-    padding: 1em;
-    background-color: $grayColor;
-    li {
-      font-size: 1.5rem;
-      color: $whiteColor;
-      margin: 0.2em;
-    }
-    .made {
-      font-size: 10px;
-      a {
-        text-decoration: none;
-        color: $blueColor;
-      }
-    }
-  }
-}
-
 .loader {
   @include center(column);
   text-align: center;
@@ -46,20 +27,4 @@ h3 {
   padding: 1em;
   margin: 0.5em;
   color: $whiteColor;
-}
-
-@media (max-width: 600px) {
-  .landing {
-    h1 {
-      font-size: 26px;
-    }
-  }
-  h3 {
-    font-size: 16px;
-  }
-  .desc {
-    .socdistance {
-      width: 160px;
-    }
-  }
 }
