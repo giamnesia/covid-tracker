@@ -2,11 +2,13 @@ landing = document.querySelector(".landing");
 form = document.querySelector(".form");
 image = document.querySelector(".desc");
 form.addEventListener("submit", search);
-
+loader = document.querySelector(".loader");
 this.onload = world;
 async function world() {
+  loader.style.display = "block";
   const response = await fetch("https://disease.sh/v3/covid-19/all");
   response.json().then((data) => {
+    loader.style.display = "none";
     worldcases(data);
   });
 }
@@ -29,6 +31,7 @@ function worldcases(data) {
 async function search(e) {
   searchval = document.querySelector(".search").value;
   e.preventDefault();
+  loader.style.display = "block";
 
   const response = await fetch(
     "https://corona.lmao.ninja/v3/covid-19/countries/" +
@@ -38,11 +41,14 @@ async function search(e) {
   response.json().then((data) => {
     if (response.ok) {
       display(data);
+      loader.style.display = "none";
     } else {
       displayerror(data);
+      loader.style.display = "none";
     }
   });
   if (searchval === "") {
+    loader.style.display = "none";
     image.style.display = "none";
     landing.innerHTML = `<h3> Oh no! Please input fields &#128551;</h3>`;
   }

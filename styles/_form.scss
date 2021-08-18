@@ -1,0 +1,22 @@
+form {
+  @include center(row);
+  margin: 2em;
+  input {
+    border-radius: 1em 0 0 1em;
+    color: $whiteColor;
+    background-color: $grayColor;
+    outline: none;
+    border: none;
+    padding: 1em;
+    width: 170px;
+  }
+  button {
+    cursor: pointer;
+    border-radius: 0 1em 1em 0;
+    padding: 1em;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: $blueColor;
+  }
+}

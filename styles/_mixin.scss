@@ -1,0 +1,11 @@
+@mixin center($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+}
+$blackColor: rgb(30, 29, 43);
+$blueColor: #0177fb;
+$grayColor: rgb(43, 44, 62);
+$whiteColor: rgb(252, 252, 252);

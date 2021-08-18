@@ -1,53 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #1e1d2b;
-  overflow-x: hidden;
-}
-
-.nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  list-style: none;
-  padding: 1em;
-  background-color: #2b2c3e;
-}
-
-.nav ul li {
-  font-size: 1.5rem;
-  color: #fcfcfc;
-  margin: 0.2em;
-}
-
-.nav ul .made {
-  font-size: 10px;
-}
-
-.nav ul .made a {
-  text-decoration: none;
-  color: #0177fb;
-}
-
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,6 +158,74 @@ form button {
 
 .landing .card .cards .data {
   font-size: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1d2b;
+  overflow-x: hidden;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 1em;
+  background-color: #2b2c3e;
+}
+
+.nav ul li {
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  margin: 0.2em;
+}
+
+.nav ul .made {
+  font-size: 10px;
+}
+
+.nav ul .made a {
+  text-decoration: none;
+  color: #0177fb;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 h3 {

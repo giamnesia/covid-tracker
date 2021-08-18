@@ -1,0 +1,28 @@
+.landing {
+  @include center(column);
+  img {
+    margin: 1em;
+    width: 50px;
+  }
+  h1 {
+    color: $whiteColor;
+    text-align: center;
+  }
+  .card {
+    @include center(row);
+    color: $whiteColor;
+    margin: 1em;
+    .cards {
+      border-radius: 5px;
+      background-color: $grayColor;
+      @include center(column);
+      margin: 1em;
+      padding: 0.5em;
+      width: 300px;
+      height: 150px;
+      .data {
+        font-size: 2rem;
+      }
+    }
+  }
+}
